@@ -8,7 +8,7 @@ void Shellsort(int A[],int n){
 			for(int i=k; i<n;i++){
 				int auxi=A[i];
 				int j=i;
-				while(j-k>=1 && A[j-k]<auxi){
+				while(j-k>=0 && A[j-k]>auxi){
 					A[j]=A[j-k];
 					j=j-k;
 				}
